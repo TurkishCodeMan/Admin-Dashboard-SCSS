@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <script src="https://kit.fontawesome.com/3221381b99.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+    <script defer src="./assets/js/panel.js"></script>
+    <link rel="stylesheet" href="./assets/scss/main.css">
+</head>
+
+<body>
+<div class="panel">
+    <nav>
+        <div class="menu">
+            <div class="menu-logo">
+                <img src="./assets/img/Logo.png" alt="">
+
+            </div>
+            <ul class="menu-list">
+                <li class="menu-list-item">
+                    <i class="fas fa-receipt"></i>
+                    <p class="menu-list-item-text">
+                        Dashboard
+                    </p>
+                </li>
+                <li class="menu-list-item">
+                    <i class="fas fa-wallet"></i>
+                    <p class="menu-list-item-text">
+                        Wallet
+                    </p>
+                </li>
+                <li class="menu-list-item">
+                    <i class="far fa-comment"></i>
+                    <p class="menu-list-item-text">
+                        Messages
+                    </p>
+                </li>
+                <li class="menu-list-item">
+                    <i class="fas fa-trailer"></i>
+                    <p class="menu-list-item-text">
+                        Trade
+                    </p>
+                </li>
+                <li class="menu-list-item">
+                    <i class="fas fa-male"></i>
+                    <p class="menu-list-item-text">
+                        Account Settings
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="content">
+        <div class="content-header">
+            <div class="content-left">
+                <p class="content-title">
+                    Dashboard
+                </p>
+                <small class="content-small">
+                    With all of the styling tool options available in today’s market
+                </small>
+            </div>
+            <div class="content-right">
+                <div class="icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
+                <button class="btn btn-notification">
+                    <i class="fas fa-bell"></i>
+                    <span>15</span>
+                </button>
+                <div class="person">
+                    <img src="./assets/img/Face.png" alt="">
+                    <p class="person-name">Pixelz Warrious</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-wallet">
+            <p class="content-wallet-text">Wallet</p>
+        </div>
+        <div class="content-cards">
+            <div class="card">
+                <p class="card-title">B</p>
+                <div class="card-content">
+                    <div class="card-content-top">
+                        <p class="card-title">1.9678</p>
+                        <p class="card-coin">BTC</p>
+                    </div>
+                    <div class="card-content-bottom">
+                        <p class="card-title"></p>
+                        <i class="d-inline fas fa-sort-up"></i>
+                        <small class="value">
+                            +12.5%
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <p class="card-title">E</p>
+                <div class="card-content">
+                    <div class="card-content-top">
+                        <p class="card-title">23.324</p>
+                        <p class="card-coin">ETH</p>
+                    </div>
+                    <div class="card-content-bottom">
+                        <p class="card-title"></p>
+                        <i class="d-inline fas fa-sort-down"></i>
+                        <small class="value-down">
+                            -5.5%
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <p class="card-title">L</p>
+                <div class="card-content">
+                    <div class="card-content-top">
+                        <p class="card-title">380.234</p>
+                        <p class="card-coin">LTC</p>
+                    </div>
+                    <div class="card-content-bottom">
+                        <p class="card-title"></p>
+                        <i class="d-inline fas fa-sort-up"></i>
+                        <small class="value-up">
+                            +39.5%
+                        </small>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card card-currency">
+                <i class="fas fa-plus"></i>
+                <p class="card-currency">Add Currency</p>
+            </div>
+
+
+
+        </div>
+
+        <div class="content-chart">
+            <canvas id="myChart" width="100%" height="100%"></canvas>
+        </div>
+    </section>
+
+</div>
+
+
+</body>
+
+</html>

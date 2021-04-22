@@ -1,0 +1,152 @@
+//Content
+.panel {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+//Global Class
+
+.content-title {
+  color: var(--colorWhiteText);
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+}
+
+.content-small {
+  color: var(--colorText);
+  margin: 0;
+  padding: 0;
+}
+.btn-notification {
+  margin-right: 22px;
+  margin-left: 36px;
+  border-radius: var(--borderRadius);
+  color: var(--colorWhiteText);
+  background: linear-gradient(136.67deg, #ff409a 8.34%, #c438ef 95.26%);
+}
+
+.value-up {
+  color: var(--colorGreenText);
+}
+.value-down {
+  color: var(--colorRedText);
+}
+
+.content {
+  padding: 34px 57px;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  &-header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .content-right {
+      color: var(--colorText);
+      display: flex;
+      align-items: center;
+
+      .icons {
+        display: flex;
+        i {
+          &:last-child {
+            margin-left: 28px;
+          }
+        }
+      }
+
+      .person {
+        display: flex;
+
+        img {
+          margin-right: 9px;
+        }
+
+        .person-name {
+          display: none;
+          @include tablet {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  &-wallet {
+    margin-top: 24px;
+    &-text {
+      font-size: 10.9201px;
+      color: var(--colorMenuWallet);
+      line-height: 13px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+  }
+
+  &-cards {
+    margin-top: 19px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(173px, 1fr));
+    gap: 18px;
+    .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      color: var(--colorWhiteText);
+      background: transparent;
+      border: 1px solid var(--colorBorder);
+      border-radius: var(--borderRadius);
+      padding: 15px 18px;
+
+      &:first-child {
+        background: linear-gradient(
+          to right,
+          var(--colorCardFirst),
+          var(--colorCardSecond)
+        );
+        .card-coin {
+          font-weight: bold;
+          color: var(--colorWhiteText);
+        }
+      }
+
+      &:last-child {
+        border: 1px dashed var(--colorBorder);
+      }
+
+      &-content {
+        .card-title {
+          margin: 0px 10px;
+          font-weight: bold;
+        }
+        .card-coin {
+          font-weight: bold;
+          color: var(--colorCardText);
+        }
+        &-top {
+          display: flex;
+          margin-bottom: 10px;
+        }
+        &-bottom {
+          display: flex;
+          align-items: center;
+
+          i {
+            margin: 0px 7px;
+          }
+        }
+      }
+    }
+  }
+
+  &-chart{
+      margin-top: 16px;
+  }
+}

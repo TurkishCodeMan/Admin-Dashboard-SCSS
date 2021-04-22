@@ -1,0 +1,29 @@
+
+:root {
+  --colorMenuBg: #211E49;
+  --colorText:#5B5A99;
+  --colorTextHover:#53B9EA;
+  --colorDashboardBg:#1D1A42;
+  --colorWhiteText:#E8E7EB;
+  --colorBorder:#312F62;
+  --colorCardText:#312F62;
+  --colorBtnColor:#C6379A;
+  --colorBtnColorSecond:#A633C8;
+  --colorGreenText:#4CD5BA;
+  --colorRedText:#652D55;
+  --colorIcon:#6F6C99;
+  --colorMenuWallet:#B1AFCD;
+  --colorCardFirst:#2DCDF3;
+  --colorCardSecond:#24C6ED;
+  --shadowColor: 250, 88, 253;
+  --shadowAlpha: 0.8;
+  --borderRadius:15px;
+  --shadow: 4px 6px 12px rgba(var(--shadowColor), var(--shadowAlpha));
+}
+
+.dark-mode {
+ 
+  --shadowColor: 110, 10, 123;
+  --shadowAlpha: 0.8;
+  --shadow: 4px 4px 8px rgba(var(--shadowColor), var(--shadowAlpha));
+}
